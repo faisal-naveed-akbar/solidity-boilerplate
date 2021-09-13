@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contract: ERC20Factory Deploys the correct token Should deploy basic token if the provided type is basic 1`] = `
+Object {
+  "deployedTokenAddress": "0x687aE86a38AB9938C994270253EeC8D1A24c635B",
+}
+`;

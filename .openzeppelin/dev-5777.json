@@ -1,0 +1,85 @@
+{
+  "contracts": {},
+  "solidityLibs": {},
+  "proxies": {
+    "tangany-test-token/ERC20Factory": [
+      {
+        "address": "0x68D44c12279cC11f609F9Ee1bA2517621e72Ab3C",
+        "kind": "NonProxy",
+        "bytecodeHash": "45af182121503c7144f02dec62feb2121c6ecda810a20d23ed14a6c354cbae19"
+      },
+      {
+        "address": "0xC11d7386b03a7c44f836f127c9e542118217Bf00",
+        "kind": "NonProxy",
+        "bytecodeHash": "02b87df9926e4f25f86b49ac4d92969c48fbdd80deee1541c3f0606c2e0f1283"
+      },
+      {
+        "address": "0x8397f5663a9296Fc659E65C38AAA84e0F57a05d5",
+        "kind": "NonProxy",
+        "bytecodeHash": "9d056bba84007ef3e532e4648ab5a054f9aaa2226bdad8cf49a0705b5e291379"
+      },
+      {
+        "address": "0x33AEAD687B0278a73Da679f6B34D4a559b32bfEF",
+        "kind": "NonProxy",
+        "bytecodeHash": "9d056bba84007ef3e532e4648ab5a054f9aaa2226bdad8cf49a0705b5e291379"
+      },
+      {
+        "address": "0x38f0198CB3fC618d7a44F8b2ca9a5CD400E554bF",
+        "kind": "NonProxy",
+        "bytecodeHash": "9d056bba84007ef3e532e4648ab5a054f9aaa2226bdad8cf49a0705b5e291379"
+      },
+      {
+        "address": "0x8c5C788066CB112f6a8E4b30c03e09A5A33b070c",
+        "kind": "NonProxy",
+        "bytecodeHash": "8827d2d56d2874addc6e8c9bd04b5eed80e575019c8d02ec634cd22d7761f7e9"
+      },
+      {
+        "address": "0xe47Fa7197d709Aee44A3CeF198B41451393aaE04",
+        "kind": "NonProxy",
+        "bytecodeHash": "e597fbce3fa8b3505c0ca436bd456f288a5b8d722d3af2be2331dcc96392aa6e"
+      },
+      {
+        "address": "0x6b17FA8d071c97b36a8910DCfa8021820a7bB338",
+        "kind": "NonProxy",
+        "bytecodeHash": "e597fbce3fa8b3505c0ca436bd456f288a5b8d722d3af2be2331dcc96392aa6e"
+      }
+    ],
+    "tangany-test-token/BasicToken": [
+      {
+        "address": "0xB822B688b3EA2b312ACA407995cE2A9743E8598e",
+        "kind": "NonProxy",
+        "bytecodeHash": "03198369b61798791e4b97c8b304a9657b754493fc8589b6412565446b0bec33"
+      }
+    ],
+    "tangany-test-token/NonFungibleToken": [
+      {
+        "address": "0x6345f79880F2Bed23Ff610a11088e4E35A5BD9D1",
+        "kind": "NonProxy",
+        "bytecodeHash": "c69723ff4255eb66e91c6306f990165b8394ba03550cb924ef70363580cd1ca1"
+      },
+      {
+        "address": "0x6C2B3f735A05e06F59f7e3fF765f9B1BBd8bae59",
+        "kind": "NonProxy",
+        "bytecodeHash": "c69723ff4255eb66e91c6306f990165b8394ba03550cb924ef70363580cd1ca1"
+      }
+    ],
+    "tangany-test-token/TokenDeployer": [
+      {
+        "address": "0xC16303Ad3DcD3C539E44E64259751BE76F1c203a",
+        "kind": "NonProxy",
+        "bytecodeHash": "5b6af93a7b4d557fba2b9cd190e7a00fcab953b23b7aeeb0c11a85ac6899881e"
+      },
+      {
+        "address": "0x7902f8b06B75fEF86c90269ca03E72e3Ac1e7233",
+        "kind": "NonProxy",
+        "bytecodeHash": "5b6af93a7b4d557fba2b9cd190e7a00fcab953b23b7aeeb0c11a85ac6899881e"
+      },
+      {
+        "address": "0x03Ed873Ec9c81d9dB72292A88aF8cA1Ec969e893",
+        "kind": "NonProxy",
+        "bytecodeHash": "5b6af93a7b4d557fba2b9cd190e7a00fcab953b23b7aeeb0c11a85ac6899881e"
+      }
+    ]
+  },
+  "manifestVersion": "2.2"
+}

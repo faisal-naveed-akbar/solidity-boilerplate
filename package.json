@@ -1,0 +1,45 @@
+{
+  "name": "tangany-test-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "npm run build",
+    "start:develop": "truffle develop",
+    "build": "truffle compile",
+    "deploy:mainnet": "truffle migrate --network mainnet",
+    "deploy:ropsten": "truffle migrate --network ropsten",
+    "deploy:private": "truffle migrate --network private",
+    "deploy:development": "truffle migrate --network development",
+    "list:compilers": "truffle compile --list",
+    "prebuild": "rimraf ./build/contracts/*",
+    "postinstall": "cpr .env.example .env",
+    "verify:ropsten": "truffle run verify --network ropsten",
+    "verify:mainnet": "truffle run verify --network mainnet",
+    "test": "truffle test ./test/* --show-events"
+  },
+  "keywords": [],
+  "private": true,
+  "author": "Tangany <developers@tangany.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^3.2.0",
+    "@truffle/hdwallet-provider": "^1.2.0",
+    "chai": "^4.3.4",
+    "cpr": "^3.0.1",
+    "dotenv": "^8.2.0",
+    "mocha-chai-jest-snapshot": "^1.1.3",
+    "rimraf": "^3.0.2",
+    "truffle": "^5.1.55",
+    "truffle-plugin-verify": "^0.5.2",
+    "web3": "^1.5.2"
+  },
+  "devDependencies": {
+    "nyc": "^15.1.0",
+    "solidity-coverage": "^0.7.17"
+  }
+}
