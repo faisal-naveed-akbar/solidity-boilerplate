@@ -43,7 +43,8 @@ if (process.env.ETHERSCAN_APIKEY) {
 module.exports = {
     plugins: [
         'truffle-plugin-verify',
-        'solidity-coverage'
+        'solidity-coverage',
+        'truffle-contract-size'
     ],
     etherscan: {
         apiKey: process.env.ETHERSCAN_APIKEY
@@ -66,6 +67,13 @@ module.exports = {
         development: {
             host: "localhost",
             port: 9545,
+            gas: 6700000,
+            network_id: "5777",
+        },
+
+        coverage: {
+            host: "localhost",
+            port: 8545,
             gas: 6700000,
             network_id: "5777",
         },

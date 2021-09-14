@@ -3,16 +3,17 @@ pragma solidity >=0.4.22 <0.8.0;
 
 import './BasicToken.sol';
 import './NonFungibleToken.sol';
-//import './Pausafe.sol';
+import './interfaces/ITokenDeployer.sol';
 
-contract TokenDeployer {
+ contract TokenDeployer is ITokenDeployer {
 
     function deploy(
         address factory,
         string memory tokenName,
         string memory tokenSymbol,
         string memory tokenType
-    ) public returns (address deployedToken) {
+    ) public override returns (address deployedToken) {
+        
 
         address a = 0x0000000000000000000000000000000000000000;
 
@@ -27,4 +28,4 @@ contract TokenDeployer {
         return a;
             
     }
-}
+ }

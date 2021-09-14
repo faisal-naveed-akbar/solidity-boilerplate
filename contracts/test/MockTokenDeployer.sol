@@ -3,28 +3,29 @@ pragma solidity >=0.4.22 <0.8.0;
 
 import './MockBasicToken.sol';
 import './MockNFT.sol';
+import '../TokenDeployer.sol';
 import '../interfaces/ITokenDeployer.sol';
 
-contract MockTokenDeployer is ITokenDeployer {
+contract MockTokenDeployer is TokenDeployer { //can change to is ITokenDeployer and uncomment the code below
 
-    function deploy(
-        address factory,
-        string memory tokenName,
-        string memory tokenSymbol,
-        string memory tokenType
-    ) public override returns (address deployedToken) {
+    // function deploy(
+    //     address factory,
+    //     string memory tokenName,
+    //     string memory tokenSymbol,
+    //     string memory tokenType
+    // ) public override returns (address deployedToken) {
 
-        address a = 0x0000000000000000000000000000000000000000;
+    //     address a = 0x0000000000000000000000000000000000000000;
 
-        if(keccak256(abi.encodePacked((tokenType))) == keccak256(abi.encodePacked(('Basic')))){
-            a = address(new MockBasicToken(tokenName, tokenSymbol));
-        }
+    //     if(keccak256(abi.encodePacked((tokenType))) == keccak256(abi.encodePacked(('Basic')))){
+    //         a = address(new MockBasicToken(tokenName, tokenSymbol));
+    //     }
         
-        else if(keccak256(abi.encodePacked((tokenType))) == keccak256(abi.encodePacked(('NFT')))){
-            a = address(new MockNFT(tokenName, tokenSymbol));
-        }
+    //     else if(keccak256(abi.encodePacked((tokenType))) == keccak256(abi.encodePacked(('NFT')))){
+    //         a = address(new MockNFT(tokenName, tokenSymbol));
+    //     }
 
-        return a;
+    //     return a;
             
-    }
+    // }
 }
