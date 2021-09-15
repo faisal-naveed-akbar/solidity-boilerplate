@@ -7,7 +7,6 @@ This project demonstrates an implementation, deployment, testing and coverage re
 ### npm install
 First of all, clone this project, go into the root directory, type npm install and get all the packages listed in the package.json file to make your project up and running.
 
-### Start your Ganache Client
 To make this project interact with a local ethereum blockchain, download your ganache client and start it, make sure that the port number and the network_id in the settings > server in your ganache client is the same as configured in truffle-config.js file.
 
 ### truffle compile
