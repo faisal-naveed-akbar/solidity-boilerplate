@@ -18,6 +18,9 @@ Truffle deploy will deploy all your smart contracts on to the locally running et
 ### truffle test
 This command lets you run all your tests. You can modify the path in the package.json test script if your tests reside in some other folder.
 
+### truffle migrate --reset
+This command will create the artifacts of your deployed contracts, which will be used later on to generate test coverage reports.
+
 ### npm run coverage
 This command will run all the test cases and let you know the statement, function, and branch coverages. It will also generate an html file, which when run on a browser, will make the coverage report easy to comprehend.
 
