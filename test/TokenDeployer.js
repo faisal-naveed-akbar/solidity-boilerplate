@@ -38,6 +38,26 @@ contract("TokenDeployer", accounts => {
 
         });
 
+        it("Should deploy NFT token if the provided type is NFT", async () => {
+
+            const TokenDeployerInstance = await TokenDeployer.deployed();
+
+            const transaction = await TokenDeployerInstance.deploy(
+                TokenDeployerInstance.address,
+                'MyToken', 
+                'MT', 
+                'NFT'
+            );
+
+            const deployedTokenAddress = web3.utils.toChecksumAddress(transaction.receipt.rawLogs[0].address)
+
+            assert.notEqual(
+                deployedTokenAddress, 
+                web3.utils.toChecksumAddress(nullAddress)
+            );
+
+        });
+
         it("Should not deploy any token if the provided type is not one of the available types", async () => {
 
             const TokenDeployerInstance = await TokenDeployer.deployed();

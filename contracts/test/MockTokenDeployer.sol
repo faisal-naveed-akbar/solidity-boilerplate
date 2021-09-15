@@ -6,7 +6,7 @@ import './MockNFT.sol';
 import '../TokenDeployer.sol';
 import '../interfaces/ITokenDeployer.sol';
 
-contract MockTokenDeployer is TokenDeployer { //can change to is ITokenDeployer and uncomment the code below
+contract MockTokenDeployer{ //is TokenDeployer { //can change to is ITokenDeployer and uncomment the code below
 
     // function deploy(
     //     address factory,
