@@ -24,4 +24,5 @@ This command will create the artifacts of your deployed contracts, which will be
 ### npm run coverage
 This command will run all the test cases and let you know the statement, function, and branch coverages. It will also generate an html file, which when run on a browser, will make the coverage report easy to comprehend.
 
-
+### npx oz send-tx
+This command can be used to access the individual functions of all the contracts. These functions can be passed arguments from the console and be tested.
