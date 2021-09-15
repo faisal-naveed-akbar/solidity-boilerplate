@@ -1,4 +1,4 @@
-# Basic Sample Hardhat Project
+# Solidity Boilerplate
 
 This project demonstrates an implementation, deployment, testing and coverage reports similar to that of UniswapV3. It comes with some sample contracts, like a factory that generates two types of tokens, one of them being a basic token that implements the ERC20 protocol, and the other being the Non Fungible Token that implements the ERC721 protocol. There is a deployer that deploys the contracts and returns the addresses.
 
